@@ -78,6 +78,9 @@ export default {
   width: 100%;
   margin: 10px auto 50px auto;
   align-items: flex-start;
+  &__history-items {
+    text-align: left;
+  }
   &__aulas-title {
     font-size: 2rem;
     color: #4f56e9;
