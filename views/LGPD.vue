@@ -41,7 +41,7 @@
       <SharedAsideItem
         text="Oportunidades de Emprego"
         to="/empregos"
-        :active="true"
+        :active="false"
       >
         <template v-slot:icon
           ><svg
@@ -52,13 +52,13 @@
           >
             <path d="M0 0h24v24H0zm10 5h4v2h-4zm0 0h4v2h-4z" fill="none" />
             <path
-              fill="#4F56E9"
+              fill="#444"
               d="M10 16v-1H3.01L3 19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-4h-7v1h-4zm10-9h-4.01V5l-2-2h-4l-2 2v2H4c-1.1 0-2 .9-2 2v3c0 1.11.89 2 2 2h6v-2h4v2h6c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-6 0h-4V5h4v2z"
             />
           </svg>
         </template>
       </SharedAsideItem>
-      <SharedAsideItem text="LGPD" to="/lgpd" :active="false">
+      <SharedAsideItem text="LGPD" to="/lgpd" :active="true">
         <template v-slot:icon>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -68,6 +68,7 @@
           >
             <path d="M0 0h24v24H0z" fill="none" />
             <path
+              fill="#4F56E9"
               d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
             />
           </svg>
@@ -75,46 +76,43 @@
       </SharedAsideItem>
     </SharedAsideMenu>
     <div class="content">
-      <SharedSection sectionName="Categorias" class="default-margin">
-        <SharedCategoryCard categoryName="Transporte">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
-            />
-          </svg>
-        </SharedCategoryCard>
-        <SharedCategoryCard categoryName="Tecnologia"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path
-              d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"
-            /></svg
-        ></SharedCategoryCard>
-      </SharedSection>
-      <SharedSection sectionName="Vagas"> </SharedSection>
-      <div class="vaga">
-        <div class="informacao-empresa">
-          <h4 class="nome-empresa">GRUPO CCR</h4>
-          <span class="dataCriada">10 dias atrás</span>
-          <img src="../assets/ccr.png" alt="" />
-        </div>
-        <span class="descricao-vaga"
-          >Para para jovens aprendizes que estão em busca de ingressar no
-          mercado de logística.</span
-        >
-        <SharedButton rote="/empregos" text="Ver mais" class="emprego__buton" />
-      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        enable-background="new 0 0 24 24"
+        height="120"
+        viewBox="0 0 24 24"
+        width="120"
+      >
+        <g>
+          <rect fill="none" height="24" width="24" />
+          <path
+            fill="#4F56E9"
+            d="M12,1L3,5v6c0,5.55,3.84,10.74,9,12c5.16-1.26,9-6.45,9-12V5L12,1L12,1z M11,7h2v2h-2V7z M11,11h2v6h-2V11z"
+          />
+        </g>
+      </svg>
+      <h4 class="lgpd-titulo">Informações sobre a LGPD</h4>
+      <span class="lgpd-info"
+        >A Lei Geral de Proteção de Dados Pessoais (LGPD) é uma legislação que
+        tem o objetivo de proteger a liberdade e a privacidade de consumidores e
+        cidadãos. Criada em 2018 e prevista para entrar em vigor em maio de
+        2021, ela demanda que empresas e órgãos públicos mudem a forma de
+        coletar, armazenar e usar os dados das pessoas. Ou seja, terá impactos
+        significativo nas áreas jurídica, administrativa e de segurança da
+        informação das companhias.
+      </span>
+      <img src="../assets/vetorial.png" alt="vetorial.png" />
+      <span class="lgpd-info"
+        >Quando o assunto é a regulamentação das políticas de uso de dados, o
+        panorama atual evidencia o surgimento de novas tendências globais, com
+        mudanças significativas em sistemas jurídicos de inúmeros países, cujo
+        foco está em traçar diretrizes claras rumo à privacidade e segurança. No
+        Brasil, essa tendência também ganhou espaço. Após oito anos de debates e
+        redações, em 14 de agosto de 2018, o presidente Michel Temer sancionou a
+        Lei Geral de Proteção de Dados do Brasil (LGPD), Lei 13.709/2018. A lei
+        entra em vigor em setembro de 2020, possibilitando às empresas e
+        organizações um período de 18 meses para se adaptarem.</span
+      >
     </div>
   </div>
 </template>
@@ -124,20 +122,14 @@ import SharedHeaderApp from "../components/SharedHeaderApp.vue";
 import SharedAsideMenu from "../components/SharedAsideMenu.vue";
 import SharedMyProfile from "../components/SharedMyProfile.vue";
 import SharedAsideItem from "../components/SharedAsideItem.vue";
-import SharedSection from "../components/SharedSection.vue";
-import SharedCategoryCard from "../components/SharedCategoryCard.vue";
-import SharedButton from "../components/SharedButton.vue";
 
 export default {
-  name: "Empregos",
+  name: "LGPD",
   components: {
     SharedHeaderApp,
     SharedAsideMenu,
     SharedMyProfile,
     SharedAsideItem,
-    SharedSection,
-    SharedCategoryCard,
-    SharedButton,
   },
   data() {
     return {
@@ -161,9 +153,28 @@ export default {
   width: 70%;
   margin: 15vh 0% 0 25%;
   padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   &__post {
     width: 100%;
   }
+}
+
+.lgpd-titulo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #444;
+  margin: 25px auto;
+}
+
+.lgpd-info {
+  font-size: 1.2rem;
+  color: #444;
+  opacity: 0.6;
+  margin: 25px auto;
 }
 
 .post__text-area {

@@ -8,6 +8,7 @@ import FinishRegister from '../views/FinishRegister.vue';
 import Aprenda from '../views/Aprenda.vue';
 import Aprenda_aula from '../views/Aprenda_aula.vue';
 import Empregos from '../views/Empregos.vue';
+import LGPD from '../views/LGPD.vue';
 import SharedInput from "../components/SharedInput.vue";
 import SharedButton from "../components/SharedButton.vue";
 import SharedInputDivider from "../components/SharedInputDivider.vue";
@@ -59,6 +60,12 @@ const routes = [
     path: '/empregos',
     name: 'Empregos',
     component: Empregos
+  },
+  {
+    path: "/lgpd",
+    name: "LGPD",
+    component: LGPD
+
   }
 ]
 
